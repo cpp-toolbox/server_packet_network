@@ -6,7 +6,7 @@
 class ServerPacketNetwork {
   public:
     Network network;
-    ServerPacketNetwork(uint16_t port = 7777) : network(port) { network.initialize_network(); };
+    ServerPacketNetwork(uint16_t port = 7777) : network(port) {};
     PacketHandler packet_handler;
 
     void tick();
